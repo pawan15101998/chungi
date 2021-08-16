@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: "voyage";
+}
+
+.main{
+    height: 1000px;
+    width: 100%;
+    background-color: #F3EEE8;
+    border: 1px solid transparent;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    color: #E3E2E0;
+  }
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  .nav{
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 150px;
+      margin-top: 10px;
+      z-index: 999;
+      /* background-color: red; */
+  }
+  .nav h1{
+      margin-left: 50px;
+      /* padding: 0 50px; */
+      text-transform: lowercase;
+      font-weight: 100;
+      font-size: 40px;
+      line-height: 30px;
+  }
+  .nav i{
+      transition: cubic-bezier(0.19, 1, 0.22, 1)2s;
+      font-size: 30px;
+      /* margin-right: 50px; */
+  }
+  .nav i:hover{
+      transform: rotatey(180deg);
+  }
+  .nav svg{
+      width: 40px;
+      margin-right: 20px;
+      /* padding-right: 10px; */
+      transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
+  }
+  .nav svg:hover{
+transform: rotate(180deg);
+  }
+  .smile img{
+      width: 100px;
+      position: absolute;
+      top: 35%;
+      left: 70%;
+      z-index: 999;
+      /* transform: rotate(-25deg); */
+      animation: anim 3s   infinite  both;
+  }
+  .main>img{
+      z-index: 2;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+  }
+  #art{
+      z-index: 1;
+      color: #F8C1CA;
+      font-size: 520px;
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%,-30%);
+  }
+  .about{
+      border: 1px solid transparent;
+      position: relative;
+      height: 180%;
+      width: 100%;
+      background-color: #E3DACD;
+  }
+  .capsul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -3%;
+      border-radius: 100px;
+      left: 50%;
+      transform: translate(-50%,0);
+      width: 350px;
+      height: 50px;
+      background-color: #E3DACD;
+  }
+.about>h1{
+    font-weight: 100;
+    margin-top: 100px;
+    font-size: 50px;
+    text-align: center;
+}
+.work h1{
+    line-height: 200px;
+    font-weight: 100;
+    margin-top: 100px;
+    font-size: 250px;
+    text-align: center;
+}
+.work svg{
+    width: 600px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.products{
+
+    border: 1px solid transparent;
+    height: 100%;
+    width: 100%;
+    background-color: #E3DACD;
+}
+.round{
+    position: relative;
+    height: 150%;
+    width: 100%;
+    margin-top: 200px;
+    background-color: #FFE699;
+    border-top-left-radius: 800px;
+    border-top-right-radius: 800px;
+}
+.cards{
+    position: relative;
+    top: -15%;
+    left: 50%;
+    width: 350px;
+    height: 400px;
+    /* background-color: red; */
+    /* transform: translate(-50%,0); */
+}
+.card{
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    transform-origin: 50% 100%;
+    width: 250px;
+    height: 350px; 
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .6s;
+  
+}
+#one{
+ transform: translate(-50%,0) rotate(7deg);   
+ /* background-color: blue; */
+}
+#two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: translate(-50%,0) rotate(-7deg);   
+    background-color: blue;
+   }
+   #two video{
+       width: 350px;
+
+   }
+   #one{
+       background-image: url(https://images.ctfassets.net/8b1jz4cf6kyy/6aosNheaRtPUBQRf4RE2fx/48291d8abbe63cccb400c9efa0660fc1/45.png?w=1024&fm=webp&q=92);
+       background-position: center;
+       background-size: cover;
+   }
+   .cards:hover #one{
+    transform: translate(-50%,0) rotate(15deg);  
+   }
+   .cards:hover #two{
+    transform: translate(-50%,0) rotate(-15deg);  
+   }
+   #and{
+       position: absolute;
+       top: 105%;
+       transform: translate(-50%,0);
+       z-index: 5;
+       left: 50%;
+       font-size: 50px;
+       font-family: "product sans";
+   }
+   #and span{
+       font-family: "voyage";
+   }
+   .round h5{
+       margin-left: 750px;
+       font-size: 25px;
+       margin-top: -150px;
+   }
+   .round h1{
+    margin-left: 480px;
+    font-weight: 100;
+    font-size: 150px;
+   }
+   .round p{
+    /* margin-left: 50px; */
+    font-size: 15px;
+    text-align: center;
+   }
+
+   @keyframes anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(0deg);
+        }
+    }
